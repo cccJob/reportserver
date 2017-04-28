@@ -15,7 +15,10 @@
         <li><a href="#part1">启动</a></li>
         <li><a href="#part2">绑定数据源</a></li>
         <li><a href="#part3">新建报表</a></li>
-        <li><a href="#part3">打开/导入报表</a></li>
+        <li><a href="#part4">打开/导入报表</a></li>
+        <li><a href="#part5">报表操作</a></li>
+        <li><a href="#part6">参数</a></li>
+        <li><a href="#part7">其他</a></li>
     </ul>
     <ul class="wrap container">
         <li id="part1">
@@ -66,7 +69,6 @@
                     <img class="img-rounded" src="img/8.png">
                 </div>
             </div>
-
         </li>
         <li id="part3">
             <h3>新建报表</h3>
@@ -97,7 +99,7 @@
                 </div>
             </div>
         </li>
-        <li>
+        <li id="part5">
             <h3>报表操作</h3>
             <div class="section">
                 <h4>选择列</h4>
@@ -167,6 +169,61 @@
                 <div class="img clearfix">
                     <img class="img-rounded" src="img/24.png">
                 </div>
+            </div>
+            <div class="section">
+                <h4>预筛选器</h4>
+                <p>可以先把配置清单里面的简单筛选器全部清除，打开预置筛选器，语法类似编程语言的逻辑操作符And or</p>
+                <div class="img clearfix">
+                    <img class="img-rounded" src="img/25.png">
+                </div>
+            </div>
+            <p class="bg-warning">注意：由于这部分比较重要，必要时候可以参考<a target="_blank" href="https://reportserver.net/en/guides/user/chapters/Dynamic-Lists/">官方文档</a>，以及<a target="_blank" href="ReportServer - ReportServer用户指南 - 6.pdf">翻译文档</a> <a download="ReportServer - ReportServer用户指南 - 6.pdf" href="ReportServer - ReportServer用户指南 - 6.pdf">下载</a></p>
+        </li>
+        <li id="part6">
+            <h3>参数</h3>
+            <div class="section">
+                <p>有时候可能觉得用筛选器去筛选数据比较麻烦，这时我们也可以通过 <strong>参数</strong> 去筛选数据</p>
+                <p>管理 - 报表管理器 - 选中相关报表，会发现在数据库查询语句那里有个添加参数选项，默认是没有参数可添加的</p>
+                <div class="img clearfix">
+                    <img class="img-rounded" src="img/26.png">
+                </div>
+                <p>我们可以通过下面的 <strong>参数</strong> tab切换按钮切换到参数管理</p>
+                <div class="img clearfix">
+                    <img class="img-rounded" src="img/27.png">
+                </div>
+                <p>我们新增参数后，并在数据库查询语句添加该参数后，就可以通过这个参数直接去改变数据库查询语句</p>
+                <div class="img clearfix">
+                    <img class="img-rounded" src="img/28.png">
+                </div>
+                <p>我们回到该表单，就可以发现多了一个 <strong>参数</strong>配置功能 </p>
+                <div class="img clearfix">
+                    <img class="img-rounded" src="img/29.png">
+                </div>
+            </div>
+        </li>
+        <li id="part7">
+            <h3>其他</h3>
+            <div class="section">
+                <h4>保存</h4>
+                <p>我们点击报表右上角的保存按钮后，会要求我们创建新变量</p>
+                <div class="img clearfix">
+                    <img class="img-rounded" src="img/30.png">
+                </div>
+                <p>保存后，我们可以在所在的团队看到这个新保存的表单</p>
+                <div class="img clearfix">
+                    <img class="img-rounded" src="img/31.png">
+                </div>
+                <p>别的团队想要看到这个报表，可以进行导入，导入的时候选择该新保存表单所在团队，这时候你会发现经过保存的新表单除了可以 <em>作为参照导入</em> 也可以 <em>导入为副本</em></p>
+                <div class="img clearfix">
+                    <img class="img-rounded" src="img/32.png">
+                    <img class="img-rounded" src="img/33.png">
+                </div>
+            </div>
+            <div class="section">
+                <h4>oracle驱动问题</h4>
+                <p><a target="_blank" href="https://reportserver.net/en/guides/config/chapters/Manual-Installation/#Setup-the-database ">官方介绍</a></p>
+                <p>找到相应的驱动 放在<em>path_to_webapps / reportserver / WEB-INF / lib</em>目录；如我的电脑该目录为 <em>E:\Bitnami\reportserverenterprise-3.0.2-6\apache-tomcat\webapps\reportserver\WEB-INF\lib</em></p>
+                <p><a target="_blank" href="http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html">驱动下载页面</a> 下载ojdbc6.jar文件 <a download="ojdbc6.jar" href="ojdbc6.jar">本地下载</a></p>
             </div>
         </li>
     </ul>

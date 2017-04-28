@@ -1,72 +1,105 @@
-.clearfix{*zoom:1;}
-.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
-h1{
-    margin:30px 0 50px;
+.clearfix {
+    *zoom: 1;
 }
-h3{
-    margin:0 0 20px;
+
+.clearfix:after {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+}
+
+h1 {
+    margin: 30px 0 50px;
+}
+
+h3 {
+    margin: 0 0 20px;
     font-weight: 700;
 }
-h4{
+
+h4 {
     font-size: 16px;
 }
-h4:before{
+
+h4:before {
     content: "";
     display: inline-block;
     width: 5px;
     height: 5px;
     background: #666;
-    margin:-3px 5px 0 0;
+    margin: -3px 5px 0 0;
     vertical-align: middle;
 }
-ul.wrap{
-    padding:0;
+
+ul.wrap {
+    padding: 0;
 }
-ul.wrap li{
-    margin:100px 0;
+
+ul.wrap li {
+    margin: 100px 0;
     list-style: none;
 }
-.section{
+
+.section {
     padding: 0 2em;
-    margin:30px 0;
+    margin: 30px 0;
 }
-.img{
-    padding:5px;
+
+.img {
+    padding: 5px;
     margin: 0 50px;
 }
-img{
+
+img {
     max-width: 100px;
-    max-height:100px;
+    max-height: 100px;
     margin: 5px;
     float: left;
-    cursor: url("img/cursor1.png"),auto;
+    cursor: url("img/cursor1.png"), auto;
 }
-img.active{
+
+img.active {
     max-width: none;
     max-height: none;
-    cursor: url("img/cursor2.png"),auto;
+    cursor: url("img/cursor2.png"), auto;
 }
-h5{
-    margin:20px 0 0;
+
+h5 {
+    margin: 20px 0 0;
 }
-p{
+
+p {
     padding: 0 0 0 2em;
-    margin:5px 0 0;
-    color:#757575;
+    margin: 5px 0 0;
+    color: #757575;
 }
-p:before{
+
+p:before {
     content: "";
     display: inline-block;
-    border:5px solid #757575;
+    border: 5px solid #757575;
     border-color: transparent transparent transparent #757575;
-    margin:-3px 0 0 0;
+    margin: -3px 0 0 0;
     vertical-align: middle;
+}
 
+.bg-warning {
+    line-height: 3em;
+    color: inherit;
 }
-blockquote p{
+
+.bg-warning:before {
+    display: none;
+}
+
+blockquote p {
     line-height: 1.5em;
-    margin:0;
+    margin: 0;
 }
-blockquote p:before{
+
+blockquote p:before {
     display: none;
 }
